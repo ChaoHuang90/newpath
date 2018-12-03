@@ -1,0 +1,69 @@
+
+--------------------------------------------------------------------------------
+       Segmentation violation detected at Fri Nov 16 17:59:17 2018 +0900
+--------------------------------------------------------------------------------
+
+Configuration:
+  Crash Decoding           : Disabled - No sandbox or build area path
+  Crash Mode               : continue (default)
+  Default Encoding         : UTF-8
+  Deployed                 : false
+  Graphics Driver          : Intel Inc. Intel(R) Iris(TM) Plus Graphics 655 Version 2.1 INTEL-12.2.17
+  Java Version             : Java 1.8.0_152-b16 with Oracle Corporation Java HotSpot(TM) 64-Bit Server VM mixed mode
+  MATLAB Architecture      : maci64
+  MATLAB Entitlement ID    : 859635
+  MATLAB Root              : /Applications/MATLAB_R2018b.app
+  MATLAB Version           : 9.5.0.944444 (R2018b)
+  OpenGL                   : hardware
+  Operating System         : Mac OS Version 10.14.1 (Build 18B75)
+  Process ID               : 9989
+  Processor ID             : x86 Family 6 Model 142 Stepping 10, GenuineIntel
+  Session Key              : 1c464512-2193-4860-a4e4-13ed21629a9b
+  Window System            : Quartz
+
+Fault Count: 1
+
+
+Program State:
+
+Most Recent Simulink Activity:
+Move : OK in editor 1 at Fri Nov 16 15:49:45 2018
+		Move : OK in editor 1 at Fri Nov 16 15:49:33 2018
+		Move : OK in editor 1 at Fri Nov 16 15:49:27 2018
+		
+
+Most Recent Tool Interaction:
+Editor 1: Simulink::MoveTool is active because of MG2::MouseEvent at Fri Nov 16 15:49:45 2018
+		
+
+
+Abnormal termination
+
+Register State (from fault):
+  RAX = 0000000000000000  RBX = 0000000790249d78
+  RCX = 00007f90ad8789f8  RDX = 00009e7f77e37b10
+  RSP = 000060000d327b10  RBP = 0000000000000000
+  RSI = 00007fff771c2693  RDI = 000070000f716800
+
+   R8 = 000070000f716820   R9 = 00007fff4b089e23
+  R10 = 0000000000000000  R11 = 000060000d327b10
+  R12 = 000070000f716850  R13 = 000000013925f2e9
+  R14 = 00006000155b5280  R15 = 0000000000000000
+
+  RIP = 00007f90b5255c10  RFL = 00007f90ad878800
+
+   CS = 000070000f7168d0   FS = 000000013928086a   GS = 0000000000000064
+
+Stack Trace (from fault):
+[  0] 0x000000010ad6edd1                           bin/maci64/libmwfl.dylib+00007633 _ZN10foundation4core4diag15stacktrace_base7captureERKNS1_14thread_contextEm+00000049
+[  1] 0x000000010ad744b5                           bin/maci64/libmwfl.dylib+00029877 _ZN10foundation4core4test17terminate_handledEv+00006181
+[  2] 0x000000010ad729f5                           bin/maci64/libmwfl.dylib+00023029 _ZN10foundation4core4diag13terminate_logEPKcPK17__darwin_ucontext+00000149
+[  3] 0x000000010f97367b                          bin/maci64/libmwmcr.dylib+00632443 _Z19mnPrintErrorMessageRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE+00012635
+[  4] 0x000000010f971207                          bin/maci64/libmwmcr.dylib+00623111 _Z19mnPrintErrorMessageRKNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE+00003303
+[  5] 0x000000010f96ed64                          bin/maci64/libmwmcr.dylib+00613732 mnFatalSignalHandler+00000148
+[  6] 0x00007fff78486b3d           /usr/lib/system/libsystem_platform.dylib+00019261 _sigtramp+00000029
+[  7] 0x00007fff7844d19a             /usr/lib/system/libsystem_malloc.dylib+00016794 free+00000107
+[  8] 0x000000013928086a /Applications/MATLAB_R2018b.app/sys/java/jre/maci64/jre/lib/libawt_lwawt.dylib+00252010 Java_sun_java2d_opengl_OGLRenderQueue_flushBuffer+00001594
+[  9] 0x00000001203ca32a                                   <unknown-module>+00000000
+[ 10] 0x0000000120e8ecec                                   <unknown-module>+00000000
+
