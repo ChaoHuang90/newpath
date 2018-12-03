@@ -4,7 +4,7 @@
 --------------------------------------------------------------------------------
 
 Configuration:
-  Crash Decoding           : Disabled - No sandbox or build area path
+  Crash Decoding           : Disabled - No sndbox or build area path
   Crash Mode               : continue (default)
   Default Encoding         : UTF-8
   Deployed                 : false
